@@ -75,7 +75,7 @@ http://localhost:5173
 
 ---
 
-## Run Order (Important)
+## Run Order
 1. Start MongoDB  
 2. Start Backend  
 3. Start Frontend  
