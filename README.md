@@ -1,67 +1,59 @@
-Prerequisites
+# ChatApp – Run Locally
 
+## Prerequisites
 Make sure you have installed:
+- Node.js (v18+ recommended)
+- npm
+- MongoDB (local or Atlas)
 
-Node.js (v18+ recommended)
+---
 
-npm
-
-MongoDB (local or Atlas)
-
-Project Structure
+## Project Structure
+```bash
 ChatApp/
 ├── client/
 ├── server/
 └── .gitignore
 
-1. Clone the Repository
+1️. Clone the Repository
 git clone https://github.com/abhishekgargya/ChatApp.git
 cd ChatApp
 
-2. Backend Setup
+2️. Backend Setup
 cd server
 npm install
 
-
-Create a .env file inside server/:
-
+3. Create a .env file inside server/
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
-
-Run backend:
+Run backend
 
 npm run dev
-
 
 Backend will run on:
 
 http://localhost:5000
 
-3. Frontend Setup
+3️. Frontend Setup
 
 Open a new terminal:
 
 cd client
 npm install
 
-
-Create a .env file inside client/:
-
+Create a .env file inside client/
 VITE_BACKEND_URL=http://localhost:5000
 
-
-Run frontend:
-
+Run frontend
 npm run dev
-
 
 Frontend will run on:
 http://localhost:5173
 
 
--> Run Order (Important)
+->Run Order:
 
 Start MongoDB
 Start Backend
