@@ -14,47 +14,68 @@ ChatApp/
 ├── client/
 ├── server/
 └── .gitignore
+```
 
-1️. Clone the Repository
+---
+
+## 1️. Clone the Repository
+```bash
 git clone https://github.com/abhishekgargya/ChatApp.git
 cd ChatApp
+```
 
-2️. Backend Setup
+---
+
+## 2️. Backend Setup
+```bash
 cd server
 npm install
+```
 
-3. Create a .env file inside server/
+### Create a `.env` file inside `server/`
+```env
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 
-Run backend
-
+### Run backend
+```bash
 npm run dev
+```
 
 Backend will run on:
-
+```text
 http://localhost:5000
+```
 
-3️. Frontend Setup
+---
 
+## 3️. Frontend Setup
 Open a new terminal:
-
+```bash
 cd client
 npm install
+```
 
-Create a .env file inside client/
+### Create a `.env` file inside `client/`
+```env
 VITE_BACKEND_URL=http://localhost:5000
+```
 
-Run frontend
+### Run frontend
+```bash
 npm run dev
+```
 
 Frontend will run on:
+```text
 http://localhost:5173
+```
 
+---
 
-->Run Order:
-
-Start MongoDB
-Start Backend
-Start Frontend
+## Run Order (Important)
+1. Start MongoDB  
+2. Start Backend  
+3. Start Frontend  
